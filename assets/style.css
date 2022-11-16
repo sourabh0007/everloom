@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url("https://cdn.shopify.com/s/files/1/0676/6215/1982/files/Gotham_Bold.eot?v=1668413707");
+  src: url("https://cdn.shopify.com/s/files/1/0676/6215/1982/files/Gotham_Bold.eot?v=1668413707") format('embedded-opentype'),
+       url("https://cdn.shopify.com/s/files/1/0676/6215/1982/files/Gotham_Bold.woff2?v=1668413707") format('woff2'),
+       url("https://cdn.shopify.com/s/files/1/0676/6215/1982/files/Gotham_Bold.woff?v=1668413707") format('woff'),
+       url("https://cdn.shopify.com/s/files/1/0676/6215/1982/files/Gotham_Bold.ttf?v=1668413707") format('truetype'),
+       url("https://cdn.shopify.com/s/files/1/0676/6215/1982/files/Gotham_Bold.otf?v=1668413707") format('otf');
+}
+body {
+  font-family: 'Aleo', serif;
+}
+h1,h2,h3,h4,h5,h6,.collection-list-title,.h0,.h1,.card__heading a {
+  font-family: 'Gotham Bold';
+}
+.center {
+  text-align:center;
+}
+.index-announcement .announcement-bar  {
+  background:#000;
+  color:#fff;
+}
+.index-announcement .announcement-bar .announcement-bar__message {
+  color:#fff;
+}
+.template--index .banner .banner__text span{
+  font-family: 'Gotham Bold';
+  font-size: 27px;
+}
+.template--index .banner .banner__heading span {
+  font-family: 'Gotham Bold';
+  font-size: 80px;
+}
+.button {
+  background:#000;
+  color:#fff;
+}
+.button--secondary {
+  background:#fff;
+  color:#000;
+  font-weight:700;
+}
+.template--index .collection-list .card:not(.ratio) {
+      flex-direction: column-reverse !important;
+}
+.template--index .collection-list .icon-wrap {
+  display:none;
+}
+.template--index .collection-list .collection-list__item .card-wrapper {
+  background:#fff;
+}
+.collection-list__item {
+  padding:0 10px;
+}
+.image-with-text__content {
+  background:#fff;
+}
+.template--index .collection .card__heading a {
+  font-size:19px;
+}
+.faq-button span {
+  font-size:24px;
+}
+.image-with-text__media  {
+  border:none;
+}
+.template--collection .product-grid .grid__item {
+       padding: 20px 10px;
+}
+.template--collection .product-grid .grid__item .card-wrapper .card .card__inner .card__content {
+  background:none;
+}
+.template--collection .product-grid .grid__item .card-wrapper .card .card__content {
+  background:#fff;
+}
+@media only screen and (max-width: 600px) {
+  .template--product .product .product__info-wrapper {
+    padding:0 20px;
+  }
+}

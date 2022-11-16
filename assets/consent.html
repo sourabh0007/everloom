@@ -1,0 +1,114 @@
+<div x-show="showModal"  x-cloak  x-transition.opacity class="fixed inset-0 bg-slate-900/75 flex-col">
+        <div x-cloak class="fixed inset-0 z-50 flex items-center justify-center">
+          <div x-on:click.away="showModal = false" class="w-[450px]  mx-auto bg-gray-200 rounded-lg h-[450px] max-w-[575px] flex flex-col gap-3 p-4">
+            <div class="flex justify-between p-1">
+              <p class="text-gray-700 pl-3 font-mono">EverLooms</p>
+              <button id="close-pc-btn-handler" class="w-10 h-10 -mt-2" aria-label="Close" @click="showModal=false">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  width="348.333px" height="348.333px" viewBox="0 0 348.333 348.334" style="enable-background:new 0 0 348.333 348.334;" xml:space="preserve"><g><path fill="#fff" d="M336.559,68.611L231.016,174.165l105.543,105.549c15.699,15.705,15.699,41.145,0,56.85c-7.844,7.844-18.128,11.769-28.407,11.769c-10.296,0-20.581-3.919-28.419-11.769L174.167,231.003L68.609,336.563c-7.843,7.844-18.128,11.769-28.416,11.769c-10.285,0-20.563-3.919-28.413-11.769c-15.699-15.698-15.699-41.139,0-56.85l105.54-105.549L11.774,68.611c-15.699-15.699-15.699-41.145,0-56.844c15.696-15.687,41.127-15.687,56.829,0l105.563,105.554L279.721,11.767c15.705-15.687,41.139-15.687,56.832,0C352.258,27.466,352.258,52.912,336.559,68.611z"/></g></svg>
+              </button>
+            </div>
+            <div class="flex justify-between px-4">
+              <p class="text-gray-700">Privacy Preference Center</p>
+              <p></p>
+              <button class="btn bg-none bg-gray-100 text-gray-800 text-xs font-mono m-0 px-6 hover:text-gray-100">Allow All</button>
+            </div>
+            <div class="px-4">
+              <h3 class="text-gray-700 pb-3 font-mono text-sm">Manage Consent Preferences</h3>
+              <ul class="border border-white border-1">
+                <li x-data={show:false} class="flex flex-col justify-between items-center border-white border-b-[1px] px-1 py-2">
+                  <div class="flex justify-between items-center w-full">
+                    <span class="text-xs text-gray-700">Target Cookies</span>
+                    <div class="flex items-center gap-2">
+                      <input type="checkbox" class="toggle" checked />
+                      <div  class="ot-arrow-container">
+                        <button @click="show=!show">
+                        <svg class="ot-arrow" width="15px" height="15px" :class="show == true ? 'rotate': 'reverse_rotate'" x-transition aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="#ffffff" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+                      </button>
+                    </div>
+                    </div>
+                  </div>
+                  <div x-show="show" class="w-full h-full"  x-transition>
+                    <p class="text-gray-700">This is a description</p>
+                  </div>
+                </li>
+                <li x-data={show:false} class="flex flex-col justify-between items-center border-white border-b-[1px] px-1 py-2">
+                  <div class="flex justify-between items-center w-full">
+                    <span class="text-xs text-gray-700">Target Cookies</span>
+                    <div class="flex items-center gap-2">
+                      <input type="checkbox" class="toggle" checked />
+                      <div  class="ot-arrow-container">
+                        <button @click="show=!show">
+                        <svg class="ot-arrow" width="15px" height="15px" :class="show == true ? 'rotate': 'reverse_rotate'" x-transition aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="#ffffff" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+                      </button>
+                    </div>
+                    </div>
+                  </div>
+                  <div x-show="show" class="w-full h-full"  x-transition>
+                    <p class="text-gray-700">This is a description</p>
+                  </div>
+                </li>
+                <li x-data={show:false} class="flex flex-col justify-between items-center  px-1 py-2">
+                  <div class="flex justify-between items-center w-full">
+                    <span class="text-xs text-gray-700">Target Cookies</span>
+                    <div class="flex items-center gap-2 ">
+                      <input type="checkbox" class="toggle" checked />
+                      <div  class="ot-arrow-container">
+                        <button @click="show=!show">
+                        <svg class="ot-arrow" width="15px" height="15px" :class="show == true ? 'rotate': 'reverse_rotate'" x-transition aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="#ffffff" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg>
+                      </button>
+                    </div>
+                    </div>
+                  </div>
+                  <div x-show="show" class="w-full h-full"  x-transition>
+                    <p class="text-gray-700">This is a description</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="flex w-full justify-between pt-8 px-2 items-end gap-3">
+              <button class="btn text-xs m-0 md:p-4 font-mono leading-3 tracking-widest bg-black text-gray-100 rounded-lg">Confirm My Choices</button>
+              <span class="text-gray-700 text-xs font-mono align-bottom">Powered By <a class="text-blue-500 underline underline-offset-4">CookiePro</a></span>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div> -->
+    <div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      <div class="" style="">
+  <div class="bg-gray-300" style="height: 560px">
+    
+  
+    <div x-data="{ open: true }" @keydown.window.escape="open = false" x-init="$watch(open, o => !o  window.setTimeout(() => (open = true), 1000))" x-show="open" class="relative z-10" aria-labelledby="modal-title" x-ref="dialog" aria-modal="true">
+      
+        <div x-show="open" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" x-description="Background backdrop, show/hide based on modal state." class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+      
+
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+          
+            <div x-show="open" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100" x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" x-description="Modal panel, show/hide based on modal state." class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6" @click.away="open = false">
+              <div>
+                <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
+                  <svg class="h-6 w-6 text-green-600" x-description="Heroicon name: outline/check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+</svg>
+                </div>
+                <div class="mt-3 text-center sm:mt-5">
+                  <h3 class="text-lg font-medium leading-6 text-gray-900" id="modal-title">Payment successful</h3>
+                  <div class="mt-2">
+                    <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5 sm:mt-6">
+                <button type="button" class="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:text-sm" @click="open = false">Go back to dashboard</button>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  
+
+  </div>

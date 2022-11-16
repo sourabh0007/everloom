@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  
+  
+  <link href="http://127.0.0.1:9292/assets/index.css?v=649082788357729361667859142" />
+  <style></style>
+  <script async type="module" crossorigin src="/index.js"></script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="" x-data="{}">
+  <div x-cloak
+    class="w-full min-w-screen overflow-hidden bg-gray-100 mx-auto py-4 relative max-w-[100vw]"
+    x-data="">
+    <div class="" id="announcement">
+      <span
+        class="text-gray-800 w-full text-[14px] mx-auto font-mono font-extralight announcements"
+        id="" x-text="$store.announcement.activeAnnouncement"></span>
+    </div>
+  </div>
+  <div class="bg-white">
+    <main class="overflow-hidden">
+      <!-- Header -->
+      <div class="bg-warm-gray-50">
+        <div class="py-24 lg:py-32">
+          <div class="relative z-10 mx-auto max-w-7xl pl-4 pr-8 sm:px-6 lg:px-8">
+            <h1
+              class="text-4xl font-bold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">
+              Get in touch</h1>
+            <p class="mt-6 max-w-3xl text-xl text-warm-gray-500">Vel nunc non ut montes,
+              viverra tempor. Proin lectus nibh phasellus morbi non morbi. In elementum
+              urna ut volutpat. Sagittis et vel et fermentum amet consequat.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact section -->
+      <section class="relative bg-white" aria-labelledby="contact-heading">
+        <div class="absolute h-1/2 w-full bg-warm-gray-50" aria-hidden="true"></div>
+        <!-- Decorative dot pattern -->
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <svg
+            class="absolute top-0 right-0 z-0 -translate-y-16 translate-x-1/2 transform sm:translate-x-1/4 md:-translate-y-24 lg:-translate-y-72"
+            width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
+            <defs>
+              <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20"
+                height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-warm-gray-200"
+                  fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384"
+              fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+          </svg>
+        </div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="relative bg-white shadow-xl">
+            <h2 id="contact-heading" class="sr-only">Contact us</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3">
+              <!-- Contact information -->
+              <div
+                class="relative overflow-hidden bg-gradient-to-b from-teal-500 to-teal-600 py-10 px-6 sm:px-10 xl:p-12">
+                <!-- Decorative angle backgrounds -->
+                <div class="pointer-events-none absolute inset-0 sm:hidden"
+                  aria-hidden="true">
+                  <svg class="absolute inset-0 h-full w-full" width="343" height="388"
+                    viewBox="0 0 343 388" fill="none" preserveAspectRatio="xMidYMid slice"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M-99 461.107L608.107-246l707.103 707.107-707.103 707.103L-99 461.107z"
+                      fill="url(#linear1)" fill-opacity=".1" />
+                    <defs>
+                      <linearGradient id="linear1" x1="254.553" y1="107.554" x2="961.66"
+                        y2="814.66" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#fff"></stop>
+                        <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div
+                  class="pointer-events-none absolute top-0 right-0 bottom-0 hidden w-1/2 sm:block lg:hidden"
+                  aria-hidden="true">
+                  <svg class="absolute inset-0 h-full w-full" width="359" height="339"
+                    viewBox="0 0 359 339" fill="none" preserveAspectRatio="xMidYMid slice"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z"
+                      fill="url(#linear2)" fill-opacity=".1" />
+                    <defs>
+                      <linearGradient id="linear2" x1="192.553" y1="28.553" x2="899.66"
+                        y2="735.66" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#fff"></stop>
+                        <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div
+                  class="pointer-events-none absolute top-0 right-0 bottom-0 hidden w-1/2 lg:block"
+                  aria-hidden="true">
+                  <svg class="absolute inset-0 h-full w-full" width="160" height="678"
+                    viewBox="0 0 160 678" fill="none" preserveAspectRatio="xMidYMid slice"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z"
+                      fill="url(#linear3)" fill-opacity=".1" />
+                    <defs>
+                      <linearGradient id="linear3" x1="192.553" y1="325.553" x2="899.66"
+                        y2="1032.66" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#fff"></stop>
+                        <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-medium text-white">Contact information</h3>
+                <p class="mt-6 max-w-3xl text-base text-teal-50">Nullam risus blandit ac
+                  aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien
+                  tortor lacus arcu.</p>
+                <dl class="mt-8 space-y-6">
+                  <dt><span class="sr-only">Phone number</span></dt>
+                  <dd class="flex text-base text-teal-50">
+                    <!-- Heroicon name: outline/phone -->
+                    <svg class="h-6 w-6 flex-shrink-0 text-teal-200"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                    <span class="ml-3">+1 (555) 123-4567</span>
+                  </dd>
+                  <dt><span class="sr-only">Email</span></dt>
+                  <dd class="flex text-base text-teal-50">
+                    <!-- Heroicon name: outline/envelope -->
+                    <svg class="h-6 w-6 flex-shrink-0 text-teal-200"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                    <span class="ml-3">support@workcation.com</span>
+                  </dd>
+                </dl>
+                <ul role="list" class="mt-8 flex space-x-12">
+                  <li>
+                    <a class="text-teal-200 hover:text-teal-100" href="#">
+                      <span class="sr-only">Facebook</span>
+                      <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-teal-200 hover:text-teal-100" href="#">
+                      <span class="sr-only">GitHub</span>
+                      <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-teal-200 hover:text-teal-100" href="#">
+                      <span class="sr-only">Twitter</span>
+                      <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path
+                          d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Contact form -->
+              <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
+                <h3 class="text-lg font-medium text-warm-gray-900">Send us a message</h3>
+                --hear
+                <form action="#" method="POST"
+                  class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                  <div>
+                    <label for="first-name"
+                      class="block text-sm font-medium text-warm-gray-900">First
+                      name</label>
+                    <div class="mt-1">
+                      <input type="text" name="first-name" id="first-name"
+                        autocomplete="given-name"
+                        class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500">
+                    </div>
+                  </div>
+                  <div>
+                    <label for="last-name"
+                      class="block text-sm font-medium text-warm-gray-900">Last
+                      name</label>
+                    <div class="mt-1">
+                      <input type="text" name="last-name" id="last-name"
+                        autocomplete="family-name"
+                        class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500">
+                    </div>
+                  </div>
+                  <div>
+                    <label for="email"
+                      class="block text-sm font-medium text-warm-gray-900">Email</label>
+                    <div class="mt-1">
+                      <input id="email" name="email" type="email" autocomplete="email"
+                        class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between">
+                      <label for="phone"
+                        class="block text-sm font-medium text-warm-gray-900">Phone</label>
+                      <span id="phone-optional"
+                        class="text-sm text-warm-gray-500">Optional</span>
+                    </div>
+                    <div class="mt-1">
+                      <input type="text" name="phone" id="phone" autocomplete="tel"
+                        class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                        aria-describedby="phone-optional">
+                    </div>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label for="subject"
+                      class="block text-sm font-medium text-warm-gray-900">Subject</label>
+                    <div class="mt-1">
+                      <input type="text" name="subject" id="subject"
+                        class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500">
+                    </div>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <div class="flex justify-between">
+                      <label for="message"
+                        class="block text-sm font-medium text-warm-gray-900">Message</label>
+                      <span id="message-max" class="text-sm text-warm-gray-500">Max. 500
+                        characters</span>
+                    </div>
+                    <div class="mt-1">
+                      <textarea id="message" name="message" rows="4"
+                        class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                        aria-describedby="message-max"></textarea>
+                    </div>
+                  </div>
+                  <div class="sm:col-span-2 sm:flex sm:justify-end">
+                    <button type="submit"
+                      class="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-teal-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 sm:w-auto">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+  <div class="flex min-h-full">
+    <div
+      class="flex flex-1 flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+      <div class="mx-auto w-full max-w-sm lg:w-96">
+        <div>
+          <img class="h-12 w-auto"
+            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+            alt="Your Company">
+          <h2 class="mt-6 text-3xl font-bold tracking-tight text-gray-900">Sign in to your
+            account</h2>
+          <p class="mt-2 text-sm text-gray-600">
+            Or
+            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">start
+              your 14-day free trial</a>
+          </p>
+        </div>
+
+        <div class="mt-8">
+          <div>
+            <div>
+              <p class="text-sm font-medium text-gray-700">Sign in with</p>
+
+              <div class="mt-1 grid grid-cols-3 gap-3">
+                <div>
+                  <a href="#"
+                    class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-500 shadow-sm hover:bg-gray-50">
+                    <span class="sr-only">Sign in with Facebook</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                      aria-hidden="true">
+                      <path fill-rule="evenodd"
+                        d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+
+                <div>
+                  <a href="#"
+                    class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-500 shadow-sm hover:bg-gray-50">
+                    <span class="sr-only">Sign in with Twitter</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                      aria-hidden="true">
+                      <path
+                        d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+                    </svg>
+                  </a>
+                </div>
+
+                <div>
+                  <a href="#"
+                    class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-500 shadow-sm hover:bg-gray-50">
+                    <span class="sr-only">Sign in with GitHub</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                      aria-hidden="true">
+                      <path fill-rule="evenodd"
+                        d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative mt-6">
+              <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t border-gray-300"></div>
+              </div>
+              <div class="relative flex justify-center text-sm">
+                <span class="bg-white px-2 text-gray-500">Or continue with</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <form action="#" method="POST" class="space-y-6">
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email
+                  address</label>
+                <div class="mt-1">
+                  <input id="email" name="email" type="email" autocomplete="email"
+                    required
+                    class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div class="space-y-1">
+                <label for="password"
+                  class="block text-sm font-medium text-gray-700">Password</label>
+                <div class="mt-1">
+                  <input id="password" name="password" type="password"
+                    autocomplete="current-password" required
+                    class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <input id="remember-me" name="remember-me" type="checkbox"
+                    class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                  <label for="remember-me"
+                    class="ml-2 block text-sm text-gray-900">Remember me</label>
+                </div>
+
+                <div class="text-sm">
+                  <a href="#"
+                    class="font-medium text-indigo-600 hover:text-indigo-500">Forgot your
+                    password?</a>
+                </div>
+              </div>
+
+              <div>
+                <button type="submit"
+                  class="flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Sign
+                  in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative hidden w-0 flex-1 lg:block">
+      <img class="absolute inset-0 h-full w-full object-cover"
+        src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
+        alt="">
+    </div>
+  </div>
+  <section class="HeaderNew desktop-nav-open" id="header-new">
+    <div class="header-container"><a class="logo-container LogoNomad"
+        aria-label="Nomad Logo, Go To Homepage" href="/"><svg
+          class="nomad-logo  Icon--black " width="141" height="26" viewBox="0 0 141 26"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M118.246 0.0949707L128.492 0.116841C135.308 0.0546407 140.844 5.4884 140.844 12.4343C140.844 19.3801 135.307 25.0046 128.478 25.0046L118.264 24.9513L118.246 0.0949707ZM123.084 19.577H128.732C132.573 19.577 135.686 16.4024 135.686 12.4849C135.686 8.56726 132.573 5.49524 128.735 5.53283L123.106 5.51987L123.084 19.577Z"
+            fill="black"></path>
+          <path
+            d="M88.2461 25.0949L100.794 0L113.544 25.0949H108.08L100.895 10.2537L93.5084 25.0949H88.2461Z"
+            fill="black"></path>
+          <path
+            d="M57.323 25.0949V0L70.4778 9.98436L83.3627 0V25.0949H78.5057V9.98435L70.3432 15.9882L62.2476 9.91668V25.0949H57.323Z"
+            fill="black"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M52.357 12.5515C52.357 19.4557 46.7585 25.061 39.8475 25.061C32.9365 25.061 27.3379 19.4557 27.3379 12.5515C27.3379 5.64734 32.9357 0.0419922 39.8475 0.0419922C46.7591 0.0419922 52.357 5.64187 52.357 12.5515ZM39.8475 4.72586C35.5273 4.72775 32.0264 8.2309 32.0272 12.551C32.0272 16.8696 35.5288 20.372 39.849 20.373C44.171 20.373 47.6735 16.8714 47.6745 12.5513C47.6745 8.23046 44.1715 4.72677 39.8497 4.72589L39.8475 4.72586Z"
+            fill="black"></path>
+          <path
+            d="M22.4646 24.9936L5.05988 10.8271V24.9936H0V0.101074L17.337 14.6053V0.101074H22.4646V24.9936"
+            fill="black"></path>
+        </svg></a>
+      <nav class="header-nav active">
+        <div class="header-nav-container">
+          <div class="header-nav-item">
+            <div class="header-nav-link"><a href="/collections/cases">Cases</a></div>
+            <div class="desktop-nav" style="grid-template-columns: repeat(4, 1fr);">
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/phone-cases"><img decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/67d56cdd-c277-4e54-ac9d-82c22cf3e0ae/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/67d56cdd-c277-4e54-ac9d-82c22cf3e0ae/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/67d56cdd-c277-4e54-ac9d-82c22cf3e0ae/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/67d56cdd-c277-4e54-ac9d-82c22cf3e0ae/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/67d56cdd-c277-4e54-ac9d-82c22cf3e0ae/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/67d56cdd-c277-4e54-ac9d-82c22cf3e0ae/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/67d56cdd-c277-4e54-ac9d-82c22cf3e0ae/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/67d56cdd-c277-4e54-ac9d-82c22cf3e0ae/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/67d56cdd-c277-4e54-ac9d-82c22cf3e0ae/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/phone-cases">iPhone Cases</a><a
+                    class="desktop-nav-list-link" href="/collections/iphone-14-cases">
+                    <p>iPhone 14 Series</p><span
+                      style="background-color: rgb(53, 103, 150);">NEW</span>
+                  </a><a class="desktop-nav-list-link"
+                    href="/collections/iphone-13-cases">
+                    <p>iPhone 13 Series</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/collections/iphone-12-cases">
+                    <p>iPhone 12 Series</p>
+                  </a><a class="desktop-nav-list-link" href="/collections/legacy-cases">
+                    <p>Legacy iPhones</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/screen-protectors"><img decoding="async"
+                    class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/ed0bacf0-d425-4e6a-a83f-e3e248dbaed9/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/ed0bacf0-d425-4e6a-a83f-e3e248dbaed9/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/ed0bacf0-d425-4e6a-a83f-e3e248dbaed9/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/ed0bacf0-d425-4e6a-a83f-e3e248dbaed9/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/ed0bacf0-d425-4e6a-a83f-e3e248dbaed9/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/ed0bacf0-d425-4e6a-a83f-e3e248dbaed9/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/ed0bacf0-d425-4e6a-a83f-e3e248dbaed9/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/ed0bacf0-d425-4e6a-a83f-e3e248dbaed9/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/ed0bacf0-d425-4e6a-a83f-e3e248dbaed9/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/screen-protectors">Screen Protectors</a><a
+                    class="desktop-nav-list-link"
+                    href="/products/screen-protector-iphone-14-pro">
+                    <p>iPhone 14 Series</p><span
+                      style="background-color: rgb(53, 103, 150);">NEW</span>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/screen-protector-iphone-13-pro">
+                    <p>iPhone 13 Series</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/screen-protector-paperlike-12-9-inch">
+                    <p>iPad</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/ipad"><img decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/e6160780-69c4-43d4-88a5-430d071dec9e/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/e6160780-69c4-43d4-88a5-430d071dec9e/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/e6160780-69c4-43d4-88a5-430d071dec9e/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/e6160780-69c4-43d4-88a5-430d071dec9e/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/e6160780-69c4-43d4-88a5-430d071dec9e/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/e6160780-69c4-43d4-88a5-430d071dec9e/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/e6160780-69c4-43d4-88a5-430d071dec9e/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/e6160780-69c4-43d4-88a5-430d071dec9e/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/e6160780-69c4-43d4-88a5-430d071dec9e/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/ipad">iPad</a><a class="desktop-nav-list-link"
+                    href="/collections/ipad-pro">
+                    <p>iPad Pro</p>
+                  </a><a class="desktop-nav-list-link" href="/collections/ipad-air">
+                    <p>iPad Air</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/headphone-cases"><img decoding="async"
+                    class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/999b5b01-f028-4053-9d30-f286e69d44d7/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/999b5b01-f028-4053-9d30-f286e69d44d7/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/999b5b01-f028-4053-9d30-f286e69d44d7/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/999b5b01-f028-4053-9d30-f286e69d44d7/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/999b5b01-f028-4053-9d30-f286e69d44d7/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/999b5b01-f028-4053-9d30-f286e69d44d7/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/999b5b01-f028-4053-9d30-f286e69d44d7/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/999b5b01-f028-4053-9d30-f286e69d44d7/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/999b5b01-f028-4053-9d30-f286e69d44d7/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/headphone-cases">Headphones</a><a
+                    class="desktop-nav-list-link" href="/collections/cases-airpods">
+                    <p>AirPods</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/modern-leather-case-airpods-pro-rustic-brown-horween-leather">
+                    <p>AirPods Pro</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/modern-leather-case-airpods-pro-rustic-brown-horween-leather">
+                    <p>AirPods Pro (2nd gen)</p><span
+                      style="background-color: rgb(53, 103, 150);">NEW</span>
+                  </a><a class="desktop-nav-list-link" href="/collections/pixel-buds">
+                    <p>Pixel Buds</p>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-nav-item">
+            <div class="header-nav-link active"><a href="/collections/bands">Apple
+                Watch</a></div>
+            <div class="desktop-nav" style="grid-template-columns: repeat(4, 1fr);">
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/bands-leather"><img decoding="async"
+                    class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/556f9fe5-2df2-432f-935f-4d57404ace28/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/556f9fe5-2df2-432f-935f-4d57404ace28/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/556f9fe5-2df2-432f-935f-4d57404ace28/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/556f9fe5-2df2-432f-935f-4d57404ace28/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/556f9fe5-2df2-432f-935f-4d57404ace28/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/556f9fe5-2df2-432f-935f-4d57404ace28/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/556f9fe5-2df2-432f-935f-4d57404ace28/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/556f9fe5-2df2-432f-935f-4d57404ace28/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/556f9fe5-2df2-432f-935f-4d57404ace28/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/bands-leather">Leather Bands</a><a
+                    class="desktop-nav-list-link"
+                    href="/products/modern-leather-band-rustic-brown-horween-black-hardware-44mm">
+                    <p>Modern Bands</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/traditional-band-black-leather-silver-hardware">
+                    <p>Traditional Bands</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/modern-slim-band-horween-leather-black-gold-hardware">
+                    <p>Slim Bands</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/active-strap-pro-heinen-leather-classic-brown-black-hardware">
+                    <p>Active Leather</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/metal-bands"><img decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/60d15f8e-f360-4e82-a736-264b918346db/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/60d15f8e-f360-4e82-a736-264b918346db/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/60d15f8e-f360-4e82-a736-264b918346db/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/60d15f8e-f360-4e82-a736-264b918346db/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/60d15f8e-f360-4e82-a736-264b918346db/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/60d15f8e-f360-4e82-a736-264b918346db/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/60d15f8e-f360-4e82-a736-264b918346db/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/60d15f8e-f360-4e82-a736-264b918346db/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/60d15f8e-f360-4e82-a736-264b918346db/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/metal-bands">Metal Bands</a><a
+                    class="desktop-nav-list-link"
+                    href="/products/metal-band-titanium-black-44mm">
+                    <p>Titanium</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/metal-band-steel-graphite-44mm">
+                    <p>Steel</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/waterproof-bands"><img decoding="async"
+                    class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/2a0ff45a-555c-43d2-9d89-8f9bc7907930/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/2a0ff45a-555c-43d2-9d89-8f9bc7907930/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/2a0ff45a-555c-43d2-9d89-8f9bc7907930/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/2a0ff45a-555c-43d2-9d89-8f9bc7907930/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/2a0ff45a-555c-43d2-9d89-8f9bc7907930/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/2a0ff45a-555c-43d2-9d89-8f9bc7907930/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/2a0ff45a-555c-43d2-9d89-8f9bc7907930/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/2a0ff45a-555c-43d2-9d89-8f9bc7907930/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/2a0ff45a-555c-43d2-9d89-8f9bc7907930/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/waterproof-bands">Waterproof</a><a
+                    class="desktop-nav-list-link" href="/collections/bands-rugged-sport">
+                    <p>Sport Bands</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/rugged-strap-v2-black-hardware">
+                    <p>Rugged Bands</p><span
+                      style="background-color: rgb(53, 103, 150);">NEW</span>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/active-strap-pro-heinen-leather-classic-brown-black-hardware">
+                    <p>Active Leather</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/power-apple-watch"><img decoding="async"
+                    class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/2c946ece-03d8-4463-85e7-97b9980cd257/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/2c946ece-03d8-4463-85e7-97b9980cd257/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/2c946ece-03d8-4463-85e7-97b9980cd257/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/2c946ece-03d8-4463-85e7-97b9980cd257/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/2c946ece-03d8-4463-85e7-97b9980cd257/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/2c946ece-03d8-4463-85e7-97b9980cd257/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/2c946ece-03d8-4463-85e7-97b9980cd257/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/2c946ece-03d8-4463-85e7-97b9980cd257/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/2c946ece-03d8-4463-85e7-97b9980cd257/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/power-apple-watch">Charging</a><a
+                    class="desktop-nav-list-link" href="/products/base-one-max-carbide">
+                    <p>Base One Max</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/base-station-apple-watch">
+                    <p>Base Station</p>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-nav-item">
+            <div class="header-nav-link"><a href="/collections/power">Charging</a></div>
+            <div class="desktop-nav" style="grid-template-columns: repeat(4, 1fr);">
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/magsafe"><img decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/c8648010-8dc6-4c46-978a-ff3459844dbc/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/c8648010-8dc6-4c46-978a-ff3459844dbc/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/c8648010-8dc6-4c46-978a-ff3459844dbc/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/c8648010-8dc6-4c46-978a-ff3459844dbc/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/c8648010-8dc6-4c46-978a-ff3459844dbc/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/c8648010-8dc6-4c46-978a-ff3459844dbc/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/c8648010-8dc6-4c46-978a-ff3459844dbc/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/c8648010-8dc6-4c46-978a-ff3459844dbc/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/c8648010-8dc6-4c46-978a-ff3459844dbc/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/magsafe">MagSafe </a><a
+                    class="desktop-nav-list-link" href="/products/base-one-silver">
+                    <p>Base One</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/base-one-max-carbide">
+                    <p>Base One Max</p>
+                  </a><a class="desktop-nav-list-link" href="/collections/magsafe">
+                    <p>MagSafe Accessories</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/power-wireless-charging"><img decoding="async"
+                    class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/091f7c3d-d6fc-4d71-82c9-50362ca6e270/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/091f7c3d-d6fc-4d71-82c9-50362ca6e270/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/091f7c3d-d6fc-4d71-82c9-50362ca6e270/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/091f7c3d-d6fc-4d71-82c9-50362ca6e270/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/091f7c3d-d6fc-4d71-82c9-50362ca6e270/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/091f7c3d-d6fc-4d71-82c9-50362ca6e270/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/091f7c3d-d6fc-4d71-82c9-50362ca6e270/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/091f7c3d-d6fc-4d71-82c9-50362ca6e270/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/091f7c3d-d6fc-4d71-82c9-50362ca6e270/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/power-wireless-charging">Wireless</a><a
+                    class="desktop-nav-list-link" href="/collections/magsafe-charging">
+                    <p>MagSafe Charging</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/collections/power-wireless-charging">
+                    <p>Charging Hubs</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/collections/power-apple-watch">
+                    <p>Apple Watch Charging</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/cables"><img decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/602c2443-c19f-4eae-991f-0d45f2f3f5ac/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/602c2443-c19f-4eae-991f-0d45f2f3f5ac/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/602c2443-c19f-4eae-991f-0d45f2f3f5ac/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/602c2443-c19f-4eae-991f-0d45f2f3f5ac/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/602c2443-c19f-4eae-991f-0d45f2f3f5ac/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/602c2443-c19f-4eae-991f-0d45f2f3f5ac/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/602c2443-c19f-4eae-991f-0d45f2f3f5ac/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/602c2443-c19f-4eae-991f-0d45f2f3f5ac/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/602c2443-c19f-4eae-991f-0d45f2f3f5ac/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/cables">Cables</a><a class="desktop-nav-list-link"
+                    href="/products/usb-c-lightning-kevlar-cable">
+                    <p>Lightning</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/usb-c-kevlar-cable">
+                    <p>USB-C</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/collections/cables-universal">
+                    <p>Universal</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/adapters"><img decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/1da5b3eb-1a96-41b9-97e9-76b7c71e5bda/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/1da5b3eb-1a96-41b9-97e9-76b7c71e5bda/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/1da5b3eb-1a96-41b9-97e9-76b7c71e5bda/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/1da5b3eb-1a96-41b9-97e9-76b7c71e5bda/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/1da5b3eb-1a96-41b9-97e9-76b7c71e5bda/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/1da5b3eb-1a96-41b9-97e9-76b7c71e5bda/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/1da5b3eb-1a96-41b9-97e9-76b7c71e5bda/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/1da5b3eb-1a96-41b9-97e9-76b7c71e5bda/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/1da5b3eb-1a96-41b9-97e9-76b7c71e5bda/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/adapters">Power Adapters</a><a
+                    class="desktop-nav-list-link" href="/products/ac-adapter-20w-usb-c">
+                    <p>20W USB-C Adapter</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/ac-adapter-30w-usb-c">
+                    <p>30W USB-C Adapter</p><span
+                      style="background-color: rgb(53, 103, 150);">NEW</span>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/ac-adapter-65w-usb-c">
+                    <p>65W USB-C Adapter</p>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-nav-item">
+            <div class="header-nav-link"><a href="/collections/lifestyle-gear">Lifestyle
+                Gear</a></div>
+            <div class="desktop-nav" style="grid-template-columns: repeat(4, 1fr);">
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/airtags"><img decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/d99a8c74-c975-4a60-bbe3-e22ef6fbeb0d/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/d99a8c74-c975-4a60-bbe3-e22ef6fbeb0d/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/d99a8c74-c975-4a60-bbe3-e22ef6fbeb0d/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/d99a8c74-c975-4a60-bbe3-e22ef6fbeb0d/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/d99a8c74-c975-4a60-bbe3-e22ef6fbeb0d/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/d99a8c74-c975-4a60-bbe3-e22ef6fbeb0d/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/d99a8c74-c975-4a60-bbe3-e22ef6fbeb0d/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/d99a8c74-c975-4a60-bbe3-e22ef6fbeb0d/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/d99a8c74-c975-4a60-bbe3-e22ef6fbeb0d/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/airtags">AirTag</a><a class="desktop-nav-list-link"
+                    href="/collections/airtags">
+                    <p>Leather Keychains</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/rugged-keychain-airtag-black">
+                    <p>Rugged Keychain</p>
+                  </a><a class="desktop-nav-list-link" href="/collections/airtags">
+                    <p>All AirTag Accessories</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/wallets"><img decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/f617ae8b-051e-4bdc-991c-2fbab7a3633e/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/f617ae8b-051e-4bdc-991c-2fbab7a3633e/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/f617ae8b-051e-4bdc-991c-2fbab7a3633e/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/f617ae8b-051e-4bdc-991c-2fbab7a3633e/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/f617ae8b-051e-4bdc-991c-2fbab7a3633e/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/f617ae8b-051e-4bdc-991c-2fbab7a3633e/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/f617ae8b-051e-4bdc-991c-2fbab7a3633e/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/f617ae8b-051e-4bdc-991c-2fbab7a3633e/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/f617ae8b-051e-4bdc-991c-2fbab7a3633e/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/wallets">Wallets</a><a
+                    class="desktop-nav-list-link" href="/collections/wallets">
+                    <p>Leather Wallets</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/collections/wallet-tracking">
+                    <p>Wallet Tracking</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/laptops-and-desk"><img decoding="async"
+                    class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/286c3968-74e6-4453-a18f-00e946058e82/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/286c3968-74e6-4453-a18f-00e946058e82/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/286c3968-74e6-4453-a18f-00e946058e82/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/286c3968-74e6-4453-a18f-00e946058e82/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/286c3968-74e6-4453-a18f-00e946058e82/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/286c3968-74e6-4453-a18f-00e946058e82/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/286c3968-74e6-4453-a18f-00e946058e82/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/286c3968-74e6-4453-a18f-00e946058e82/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/286c3968-74e6-4453-a18f-00e946058e82/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/laptops-and-desk">Laptops &amp; Desk</a><a
+                    class="desktop-nav-list-link" href="/collections/laptop-sleeves">
+                    <p>Laptop Sleeves</p>
+                  </a><a class="desktop-nav-list-link"
+                    href="/products/mousepad-horween-leather-rustic-brown-13-inch">
+                    <p>Mousepads</p>
+                  </a><a class="desktop-nav-list-link" href="/products/pen-titanium">
+                    <p>Pen</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/nomad-x-moment"><img decoding="async"
+                    class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/41622172-66ca-436a-9a48-80c414617a40/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/41622172-66ca-436a-9a48-80c414617a40/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/41622172-66ca-436a-9a48-80c414617a40/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/41622172-66ca-436a-9a48-80c414617a40/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/41622172-66ca-436a-9a48-80c414617a40/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/41622172-66ca-436a-9a48-80c414617a40/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/41622172-66ca-436a-9a48-80c414617a40/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/41622172-66ca-436a-9a48-80c414617a40/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/41622172-66ca-436a-9a48-80c414617a40/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/nomad-x-moment">Other</a><a
+                    class="desktop-nav-list-link" href="/collections/apparel">
+                    <p>Apparel &amp; Hats</p>
+                  </a><a class="desktop-nav-list-link" href="/collections/nomad-x-moment">
+                    <p>Photography Gear</p>
+                  </a><a class="desktop-nav-list-link" href="/collections/everyday-carry">
+                    <p>Everyday Carry</p>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-nav-item">
+            <div class="header-nav-link"><a href="/collections/top-sellers">Explore</a>
+            </div>
+            <div class="desktop-nav" style="grid-template-columns: repeat(3, 1fr);">
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/pages/finder"><img decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/90c8dd0e-dfba-4c46-bcdf-e581c140b9f6/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/90c8dd0e-dfba-4c46-bcdf-e581c140b9f6/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/90c8dd0e-dfba-4c46-bcdf-e581c140b9f6/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/90c8dd0e-dfba-4c46-bcdf-e581c140b9f6/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/90c8dd0e-dfba-4c46-bcdf-e581c140b9f6/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/90c8dd0e-dfba-4c46-bcdf-e581c140b9f6/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/90c8dd0e-dfba-4c46-bcdf-e581c140b9f6/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/90c8dd0e-dfba-4c46-bcdf-e581c140b9f6/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/90c8dd0e-dfba-4c46-bcdf-e581c140b9f6/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/pages/finder">Discover</a><a class="desktop-nav-list-link"
+                    href="/pages/product-drops">
+                    <p>New Products</p><span
+                      style="background-color: rgb(53, 103, 150);">NEW</span>
+                  </a><a class="desktop-nav-list-link" href="/pages/leather">
+                    <p>Leather Comparison</p>
+                  </a><a class="desktop-nav-list-link" href="/collections/top-sellers">
+                    <p>Nomad Essentials</p>
+                  </a><a class="desktop-nav-list-link" href="/pages/finder">
+                    <p>Gear Finder</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container" href="/"><img
+                    decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/5f859838-65d1-4167-9b24-a580719b3726/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/5f859838-65d1-4167-9b24-a580719b3726/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/5f859838-65d1-4167-9b24-a580719b3726/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/5f859838-65d1-4167-9b24-a580719b3726/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/5f859838-65d1-4167-9b24-a580719b3726/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/5f859838-65d1-4167-9b24-a580719b3726/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/5f859838-65d1-4167-9b24-a580719b3726/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/5f859838-65d1-4167-9b24-a580719b3726/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/5f859838-65d1-4167-9b24-a580719b3726/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/">Nomad Values</a><a class="desktop-nav-list-link"
+                    href="/pages/about">
+                    <p>About Us</p>
+                  </a><a class="desktop-nav-list-link" href="/pages/sustainability">
+                    <p>Sustainability</p>
+                  </a><a class="desktop-nav-list-link" href="/pages/support">
+                    <p>Support</p>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container" href="/"><img
+                    decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/7f51adbb-3b79-4b33-96c4-a9d9bfa3710d/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/7f51adbb-3b79-4b33-96c4-a9d9bfa3710d/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/7f51adbb-3b79-4b33-96c4-a9d9bfa3710d/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/7f51adbb-3b79-4b33-96c4-a9d9bfa3710d/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/7f51adbb-3b79-4b33-96c4-a9d9bfa3710d/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/7f51adbb-3b79-4b33-96c4-a9d9bfa3710d/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/7f51adbb-3b79-4b33-96c4-a9d9bfa3710d/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/7f51adbb-3b79-4b33-96c4-a9d9bfa3710d/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/7f51adbb-3b79-4b33-96c4-a9d9bfa3710d/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/">Extras</a><a class="desktop-nav-list-link"
+                    href="/pages/wallpapers">
+                    <p>Wallpapers</p>
+                  </a><a class="desktop-nav-list-link" href="/products/puzzle">
+                    <p>Puzzle for Good</p>
+                  </a><a class="desktop-nav-list-link" href="/pages/horween-leather">
+                    <p>Horween Leather</p>
+                  </a><a class="desktop-nav-list-link" href="/pages/blog">
+                    <p>The Nomadic Blog</p>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-nav-item">
+            <div class="header-nav-link"><a href="/collections/outletsale">Sale</a></div>
+            <div class="desktop-nav" style="grid-template-columns: repeat(3, 1fr);">
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/outletsale"><img decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/71f40fc0-c8f4-4b97-9e92-9db37cc5c225/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/71f40fc0-c8f4-4b97-9e92-9db37cc5c225/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/71f40fc0-c8f4-4b97-9e92-9db37cc5c225/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/71f40fc0-c8f4-4b97-9e92-9db37cc5c225/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/71f40fc0-c8f4-4b97-9e92-9db37cc5c225/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/71f40fc0-c8f4-4b97-9e92-9db37cc5c225/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/71f40fc0-c8f4-4b97-9e92-9db37cc5c225/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/71f40fc0-c8f4-4b97-9e92-9db37cc5c225/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/71f40fc0-c8f4-4b97-9e92-9db37cc5c225/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/outletsale">Outlet</a><a
+                    class="desktop-nav-list-link" href="/collections/outletsale">
+                    <p>Last Chance Sale</p><span
+                      style="background-color: rgb(231, 78, 73);">SALE</span>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/collections/warehouse"><img decoding="async" class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/7fcb88cd-f753-4b8c-a411-882efcfc6587/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/7fcb88cd-f753-4b8c-a411-882efcfc6587/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/7fcb88cd-f753-4b8c-a411-882efcfc6587/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/7fcb88cd-f753-4b8c-a411-882efcfc6587/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/7fcb88cd-f753-4b8c-a411-882efcfc6587/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/7fcb88cd-f753-4b8c-a411-882efcfc6587/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/7fcb88cd-f753-4b8c-a411-882efcfc6587/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/7fcb88cd-f753-4b8c-a411-882efcfc6587/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/7fcb88cd-f753-4b8c-a411-882efcfc6587/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/collections/warehouse">Warehouse</a><a
+                    class="desktop-nav-list-link" href="/collections/warehouse">
+                    <p>Shop Gently Used Gear</p><span
+                      style="background-color: rgb(231, 78, 73);">SALE</span>
+                  </a></div>
+              </div>
+              <div class="desktop-nav-item"><a class="nav-image-container"
+                  href="/products/face-mask-50-pack"><img decoding="async"
+                    class="nav-image"
+                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/54c15c4a-0da0-4f1a-b1da-ecbe384a4559/"
+                    srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/54c15c4a-0da0-4f1a-b1da-ecbe384a4559/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/54c15c4a-0da0-4f1a-b1da-ecbe384a4559/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/54c15c4a-0da0-4f1a-b1da-ecbe384a4559/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/54c15c4a-0da0-4f1a-b1da-ecbe384a4559/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/54c15c4a-0da0-4f1a-b1da-ecbe384a4559/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/54c15c4a-0da0-4f1a-b1da-ecbe384a4559/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/54c15c4a-0da0-4f1a-b1da-ecbe384a4559/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/54c15c4a-0da0-4f1a-b1da-ecbe384a4559/ 2048w"
+                    sizes="265px" loading="lazy"></a>
+                <div class="desktop-nav-list"><a class="desktop-nav-list-title"
+                    href="/products/face-mask-50-pack">Medical</a><a
+                    class="desktop-nav-list-link" href="/products/face-mask-50-pack">
+                    <p>3-Layer Masks</p>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="SearchBar-overlay" aria-hidden="true"></div>
+      <div class="SearchBar" aria-hidden="true">
+        <div class="PageWidth">
+          <form class="SearchInput-form SearchInput-form--inDrawer" role="search"><input
+              type="search" name="q" placeholder="Search our store"
+              aria-label="Search our store" class="SearchInput-input" value=""><button
+              class="Btn" type="submit" aria-label="Submit Search Button"><svg
+                aria-hidden="true" class="Icon   Icon--black  Icon-size--lg"
+                focusable="false" viewBox="0 0 64 64" stroke-width="5" fill="none">
+                <path
+                  d="M44 27a17 17 0 1 1-17-17 17 17 0 0 1 17 17zm9.85 26.92L39.23 39.29">
+                </path>
+              </svg></button></form><button type="button"
+            aria-label="Close Search Bar"><svg aria-hidden="true" focusable="false"
+              class="Icon   Icon--black  Icon-size--lg" viewBox="0 0 64 64">
+              <path fill="none" stroke="#000" stroke-width="5"
+                d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path>
+            </svg></button>
+        </div>
+      </div>
+      <div class="header-actions"><button class="Btn icon-button notification-button"
+          type="button"><svg width="28" height="31" viewBox="0 0 28 31" fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="Icon header-notification  Icon--black ">
+            <path d="M8.14355 12.5H15.1436" stroke="black" stroke-width="2"
+              stroke-linecap="round"></path>
+            <path d="M8.14355 17.5H15.1436" stroke="black" stroke-width="2"
+              stroke-linecap="round"></path>
+            <path d="M8.14355 22.5H15.1436" stroke="black" stroke-width="2"
+              stroke-linecap="round"></path>
+            <rect x="1.89355" y="5.25" width="19.5" height="24.5" rx="3.75" stroke="black"
+              stroke-width="2.5"></rect>
+          </svg></button><button class="Btn icon-button" type="button"
+          aria-label="Search Website"><svg aria-hidden="true"
+            class="Icon header-search  Icon--black " focusable="false" viewBox="0 0 64 64"
+            stroke-width="5" fill="none">
+            <path d="M44 27a17 17 0 1 1-17-17 17 17 0 0 1 17 17zm9.85 26.92L39.23 39.29">
+            </path>
+          </svg></button><button class="Btn icon-button" type="button"
+          id="header-cart-btn" aria-label="0 items in cart, 0.0 USD"><svg
+            class="Icon header-cart  Icon--black " focusable="false" viewBox="0 0 64 64"
+            stroke-width="5" fill="none">
+            <path d="M14 17.44h46.79l-7.94 25.61H20.96l-9.65-35.1H3"></path>
+            <circle cx="27" cy="53" r="2"></circle>
+            <circle cx="47" cy="53" r="2"></circle>
+          </svg></button><button class="Btn icon-button mobile-nav-toggle"
+          type="button"><svg aria-hidden="true" focusable="false" viewBox="0 0 64 64"
+            class="Icon header-menu  Icon--black " stroke-width="5">
+            <path fill="currentColor" d="M7 15h51M7 32h43M7 49h51"></path>
+          </svg></button>
+        <div class="notification-desktop">
+          <div class="notification" style="display: none;">
+            <div class="notification-header">
+              <p>Notifications</p><button class="Btn icon-button notif-btn"
+                type="button"><svg aria-hidden="true" focusable="false"
+                  class="Icon notification-close  Icon--black " viewBox="0 0 64 64">
+                  <path fill="none" stroke="#000" stroke-width="5"
+                    d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path>
+                </svg></button>
+            </div>
+            <div class="notification-list-container">
+              <div class="notification-list">
+                <div class="notification-title">Older</div>
+                <div class="notification-container"><a class="notification-item"
+                    href="/products/super-slim-carbide-iphone-14-pro">
+                    <div class="notification-image-container"><img decoding="async"
+                        class="notification-image"
+                        src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/"
+                        srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 2048w"
+                        loading="lazy"></div>
+                    <div class="notification-content">
+                      <div class="product-name">Introducing Super Slim for iPhone 14</div>
+                      <div class="product-description">
+                        <p>Our thinnest case yet, Super Slim stylishly maintains the form
+                          factor of your iPhone.</p>
+                      </div>
+                      <div class="product-time">10 days ago</div>
+                    </div>
+                  </a><a class="notification-item"
+                    href="/products/ac-adapter-30w-transparent-usb-c">
+                    <div class="notification-image-container"><img decoding="async"
+                        class="notification-image"
+                        src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/"
+                        srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 2048w"
+                        loading="lazy"></div>
+                    <div class="notification-content">
+                      <div class="product-name">30W Adapter, Redesigned</div>
+                      <div class="product-description">
+                        <p>Introducing the limited edition Transparent colorway for 30W
+                          Adapter. Shop now.</p>
+                      </div>
+                      <div class="product-time">17 days ago</div>
+                    </div>
+                  </a><a class="notification-item"
+                    href="/products/rugged-strap-v2-ultra-orange-silver-hardware">
+                    <div class="notification-image-container"><img decoding="async"
+                        class="notification-image"
+                        src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/"
+                        srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 2048w"
+                        loading="lazy"></div>
+                    <div class="notification-content">
+                      <div class="product-name">Rugged Band in Ultra Orange</div>
+                      <div class="product-description">
+                        <p>Designed for adventure. Shop Rugged Band now.</p>
+                      </div>
+                      <div class="product-time">22 days ago</div>
+                    </div>
+                  </a><a class="notification-item"
+                    href="/collections/ultra-orange-collection">
+                    <div class="notification-image-container"><img decoding="async"
+                        class="notification-image"
+                        src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/"
+                        srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 2048w"
+                        loading="lazy"></div>
+                    <div class="notification-content">
+                      <div class="product-name">Introducing Ultra Orange</div>
+                      <div class="product-description">
+                        <p>Ultra Orange gear to complement your Apple devices. Show now.
+                        </p>
+                      </div>
+                      <div class="product-time">2 months ago</div>
+                    </div>
+                  </a><a class="notification-item" href="/collections/iphone-14-cases">
+                    <div class="notification-image-container"><img decoding="async"
+                        class="notification-image"
+                        src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/"
+                        srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 2048w"
+                        loading="lazy"></div>
+                    <div class="notification-content">
+                      <div class="product-name">Introducing Cases for iPhone 14 &amp; 14
+                        Pro</div>
+                      <div class="product-description">
+                        <p>From the modern minimalist to the adventure seeker, we have a
+                          new case for everyone.</p>
+                      </div>
+                      <div class="product-time">2 months ago</div>
+                    </div>
+                  </a><a class="notification-item" href="/products/base-one-max-gold">
+                    <div class="notification-image-container"><img decoding="async"
+                        class="notification-image"
+                        src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/"
+                        srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 2048w"
+                        loading="lazy"></div>
+                    <div class="notification-content">
+                      <div class="product-name">Limited Edition Gold is Here</div>
+                      <div class="product-description">
+                        <p>Base One and Base One Max now in Limited Edition Gold.</p>
+                      </div>
+                      <div class="product-time">3 months ago</div>
+                    </div>
+                  </a><a class="notification-item" href="/products/pen-titanium">
+                    <div class="notification-image-container"><img decoding="async"
+                        class="notification-image"
+                        src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/"
+                        srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 2048w"
+                        loading="lazy"></div>
+                    <div class="notification-content">
+                      <div class="product-name">Introducing Titanium Pen</div>
+                      <div class="product-description">
+                        <p>Machined from solid titanium, designed to write.</p>
+                      </div>
+                      <div class="product-time">3 months ago</div>
+                    </div>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu" style="--top:112.398px; display: none;">
+      <div class="menu-container">
+        <div class="mobile-accordion">
+          <div class="mobile_accordion">
+            <div class="accordion_item"><button class="accordion_button">Cases<div
+                  class="accordion_icon arrow-minus mobile-accordion-icon"
+                  style="--stroke-width:2px;"></div></button>
+              <div class="accordion_panel mobile-accordion-panel"
+                style="transition: all 300ms ease-out 0s; max-height: 0px;">
+                <div>
+                  <div class="mobile-accordion-group"><a href="/collections/cases">
+                      <div class="mobile-accordion-img-container"><img decoding="async"
+                          class="mobile-accordion-img"
+                          src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/d5083b98-653d-4088-9c4f-1d451758cb5d/"
+                          srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/d5083b98-653d-4088-9c4f-1d451758cb5d/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/d5083b98-653d-4088-9c4f-1d451758cb5d/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/d5083b98-653d-4088-9c4f-1d451758cb5d/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/d5083b98-653d-4088-9c4f-1d451758cb5d/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/d5083b98-653d-4088-9c4f-1d451758cb5d/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/d5083b98-653d-4088-9c4f-1d451758cb5d/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/d5083b98-653d-4088-9c4f-1d451758cb5d/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/d5083b98-653d-4088-9c4f-1d451758cb5d/ 2048w"
+                          loading="lazy"></div>
+                    </a><a class="mobile-accordion-group-title"
+                      href="/collections/phone-cases">iPhone Cases</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/collections/iphone-14-cases">iPhone 14 Series<span
+                          style="background-color: rgb(53, 103, 150);">NEW</span></a><a
+                        href="/collections/iphone-13-cases">iPhone 13 Series</a><a
+                        href="/collections/iphone-12-cases">iPhone 12 Series</a><a
+                        href="/collections/legacy-cases">Legacy iPhones</a></div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/screen-protectors">Screen Protectors</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/products/screen-protector-iphone-14-pro">iPhone 14
+                        Series<span
+                          style="background-color: rgb(53, 103, 150);">NEW</span></a><a
+                        href="/products/screen-protector-iphone-13-pro">iPhone 13
+                        Series</a><a
+                        href="/products/screen-protector-paperlike-12-9-inch">iPad</a>
+                    </div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/ipad">iPad</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/collections/ipad-pro">iPad Pro</a><a
+                        href="/collections/ipad-air">iPad Air</a></div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/headphone-cases">Headphones</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/collections/cases-airpods">AirPods</a><a
+                        href="/products/modern-leather-case-airpods-pro-rustic-brown-horween-leather">AirPods
+                        Pro</a><a
+                        href="/products/modern-leather-case-airpods-pro-rustic-brown-horween-leather">AirPods
+                        Pro (2nd gen)<span
+                          style="background-color: rgb(53, 103, 150);">NEW</span></a><a
+                        href="/collections/pixel-buds">Pixel Buds</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion_item"><button class="accordion_button">Apple Watch<div
+                  class="accordion_icon arrow-minus mobile-accordion-icon"
+                  style="--stroke-width:2px;"></div></button>
+              <div class="accordion_panel mobile-accordion-panel"
+                style="transition: all 300ms ease-out 0s; max-height: 0px;">
+                <div>
+                  <div class="mobile-accordion-group"><a href="/collections/bands">
+                      <div class="mobile-accordion-img-container"><img decoding="async"
+                          class="mobile-accordion-img"
+                          src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/59197bd1-365b-4805-83de-9f4cbe7c3aab/"
+                          srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/59197bd1-365b-4805-83de-9f4cbe7c3aab/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/59197bd1-365b-4805-83de-9f4cbe7c3aab/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/59197bd1-365b-4805-83de-9f4cbe7c3aab/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/59197bd1-365b-4805-83de-9f4cbe7c3aab/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/59197bd1-365b-4805-83de-9f4cbe7c3aab/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/59197bd1-365b-4805-83de-9f4cbe7c3aab/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/59197bd1-365b-4805-83de-9f4cbe7c3aab/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/59197bd1-365b-4805-83de-9f4cbe7c3aab/ 2048w"
+                          loading="lazy"></div>
+                    </a><a class="mobile-accordion-group-title"
+                      href="/collections/bands-leather">Leather Bands</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/products/modern-leather-band-rustic-brown-horween-black-hardware-44mm">Modern
+                        Bands</a><a
+                        href="/products/traditional-band-black-leather-silver-hardware">Traditional
+                        Bands</a><a
+                        href="/products/modern-slim-band-horween-leather-black-gold-hardware">Slim
+                        Bands</a><a
+                        href="/products/active-strap-pro-heinen-leather-classic-brown-black-hardware">Active
+                        Leather</a></div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/metal-bands">Metal Bands</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/products/metal-band-titanium-black-44mm">Titanium</a><a
+                        href="/products/metal-band-steel-graphite-44mm">Steel</a></div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/waterproof-bands">Waterproof</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/collections/bands-rugged-sport">Sport Bands</a><a
+                        href="/products/rugged-strap-v2-black-hardware">Rugged Bands<span
+                          style="background-color: rgb(53, 103, 150);">NEW</span></a><a
+                        href="/products/active-strap-pro-heinen-leather-classic-brown-black-hardware">Active
+                        Leather</a></div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/power-apple-watch">Charging</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/products/base-one-max-carbide">Base One Max</a><a
+                        href="/products/base-station-apple-watch">Base Station</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion_item"><button class="accordion_button">Charging<div
+                  class="accordion_icon arrow-minus mobile-accordion-icon"
+                  style="--stroke-width:2px;"></div></button>
+              <div class="accordion_panel mobile-accordion-panel"
+                style="transition: all 300ms ease-out 0s; max-height: 0px;">
+                <div>
+                  <div class="mobile-accordion-group"><a href="/collections/power">
+                      <div class="mobile-accordion-img-container"><img decoding="async"
+                          class="mobile-accordion-img"
+                          src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/5ace0505-3697-4480-9e61-ee1ee0b24f14/"
+                          srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/5ace0505-3697-4480-9e61-ee1ee0b24f14/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/5ace0505-3697-4480-9e61-ee1ee0b24f14/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/5ace0505-3697-4480-9e61-ee1ee0b24f14/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/5ace0505-3697-4480-9e61-ee1ee0b24f14/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/5ace0505-3697-4480-9e61-ee1ee0b24f14/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/5ace0505-3697-4480-9e61-ee1ee0b24f14/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/5ace0505-3697-4480-9e61-ee1ee0b24f14/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/5ace0505-3697-4480-9e61-ee1ee0b24f14/ 2048w"
+                          loading="lazy"></div>
+                    </a><a class="mobile-accordion-group-title"
+                      href="/collections/magsafe">MagSafe </a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/products/base-one-silver">Base One</a><a
+                        href="/products/base-one-max-carbide">Base One Max</a><a
+                        href="/collections/magsafe">MagSafe Accessories</a></div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/power-wireless-charging">Wireless</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/collections/magsafe-charging">MagSafe Charging</a><a
+                        href="/collections/power-wireless-charging">Charging Hubs</a><a
+                        href="/collections/power-apple-watch">Apple Watch Charging</a>
+                    </div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/cables">Cables</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/products/usb-c-lightning-kevlar-cable">Lightning</a><a
+                        href="/products/usb-c-kevlar-cable">USB-C</a><a
+                        href="/collections/cables-universal">Universal</a></div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/adapters">Power Adapters</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/products/ac-adapter-20w-usb-c">20W USB-C Adapter</a><a
+                        href="/products/ac-adapter-30w-usb-c">30W USB-C Adapter<span
+                          style="background-color: rgb(53, 103, 150);">NEW</span></a><a
+                        href="/products/ac-adapter-65w-usb-c">65W USB-C Adapter</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion_item"><button class="accordion_button">Lifestyle Gear
+                <div class="accordion_icon arrow-minus mobile-accordion-icon"
+                  style="--stroke-width:2px;"></div></button>
+              <div class="accordion_panel mobile-accordion-panel"
+                style="transition: all 300ms ease-out 0s; max-height: 0px;">
+                <div>
+                  <div class="mobile-accordion-group"><a
+                      href="/collections/lifestyle-gear">
+                      <div class="mobile-accordion-img-container"><img decoding="async"
+                          class="mobile-accordion-img"
+                          src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/cf530499-d937-4d66-8863-3db34f9bd75f/"
+                          srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/cf530499-d937-4d66-8863-3db34f9bd75f/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/cf530499-d937-4d66-8863-3db34f9bd75f/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/cf530499-d937-4d66-8863-3db34f9bd75f/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/cf530499-d937-4d66-8863-3db34f9bd75f/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/cf530499-d937-4d66-8863-3db34f9bd75f/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/cf530499-d937-4d66-8863-3db34f9bd75f/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/cf530499-d937-4d66-8863-3db34f9bd75f/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/cf530499-d937-4d66-8863-3db34f9bd75f/ 2048w"
+                          loading="lazy"></div>
+                    </a><a class="mobile-accordion-group-title"
+                      href="/collections/airtags">AirTag</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/collections/airtags">Leather Keychains</a><a
+                        href="/products/rugged-keychain-airtag-black">Rugged
+                        Keychain</a><a href="/collections/airtags">All AirTag
+                        Accessories</a></div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/wallets">Wallets</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/collections/wallets">Leather Wallets</a><a
+                        href="/collections/wallet-tracking">Wallet Tracking</a></div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/laptops-and-desk">Laptops &amp; Desk</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/collections/laptop-sleeves">Laptop Sleeves</a><a
+                        href="/products/mousepad-horween-leather-rustic-brown-13-inch">Mousepads</a><a
+                        href="/products/pen-titanium">Pen</a></div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/nomad-x-moment">Other</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/collections/apparel">Apparel &amp; Hats</a><a
+                        href="/collections/nomad-x-moment">Photography Gear</a><a
+                        href="/collections/everyday-carry">Everyday Carry</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion_item"><button class="accordion_button">Explore<div
+                  class="accordion_icon arrow-minus mobile-accordion-icon"
+                  style="--stroke-width:2px;"></div></button>
+              <div class="accordion_panel mobile-accordion-panel"
+                style="transition: all 300ms ease-out 0s; max-height: 0px;">
+                <div>
+                  <div class="mobile-accordion-group"><a href="/collections/top-sellers">
+                      <div class="mobile-accordion-img-container"><img decoding="async"
+                          class="mobile-accordion-img"
+                          src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/3d2ccdc5-fe4d-4f30-8d38-560983a20dfa/"
+                          srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/3d2ccdc5-fe4d-4f30-8d38-560983a20dfa/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/3d2ccdc5-fe4d-4f30-8d38-560983a20dfa/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/3d2ccdc5-fe4d-4f30-8d38-560983a20dfa/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/3d2ccdc5-fe4d-4f30-8d38-560983a20dfa/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/3d2ccdc5-fe4d-4f30-8d38-560983a20dfa/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/3d2ccdc5-fe4d-4f30-8d38-560983a20dfa/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/3d2ccdc5-fe4d-4f30-8d38-560983a20dfa/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/3d2ccdc5-fe4d-4f30-8d38-560983a20dfa/ 2048w"
+                          loading="lazy"></div>
+                    </a><a class="mobile-accordion-group-title"
+                      href="/pages/finder">Discover</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/pages/product-drops">New Products<span
+                          style="background-color: rgb(53, 103, 150);">NEW</span></a><a
+                        href="/pages/leather">Leather Comparison</a><a
+                        href="/collections/top-sellers">Nomad Essentials</a><a
+                        href="/pages/finder">Gear Finder</a></div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title" href="/">Nomad Values</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/pages/about">About Us</a><a
+                        href="/pages/sustainability">Sustainability</a><a
+                        href="/pages/support">Support</a></div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title" href="/">Extras</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/pages/wallpapers">Wallpapers</a><a
+                        href="/products/puzzle">Puzzle for Good</a><a
+                        href="/pages/horween-leather">Horween Leather</a><a
+                        href="/pages/blog">The Nomadic Blog</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion_item"><button class="accordion_button">Sale<div
+                  class="accordion_icon arrow-minus mobile-accordion-icon"
+                  style="--stroke-width:2px;"></div></button>
+              <div class="accordion_panel mobile-accordion-panel"
+                style="transition: all 300ms ease-out 0s; max-height: 0px;">
+                <div>
+                  <div class="mobile-accordion-group"><a href="/collections/outletsale">
+                      <div class="mobile-accordion-img-container"><img decoding="async"
+                          class="mobile-accordion-img"
+                          src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/590da003-e4bc-40a8-8ad6-77c63bd1d469/"
+                          srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/590da003-e4bc-40a8-8ad6-77c63bd1d469/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/590da003-e4bc-40a8-8ad6-77c63bd1d469/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/590da003-e4bc-40a8-8ad6-77c63bd1d469/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/590da003-e4bc-40a8-8ad6-77c63bd1d469/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/590da003-e4bc-40a8-8ad6-77c63bd1d469/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/590da003-e4bc-40a8-8ad6-77c63bd1d469/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/590da003-e4bc-40a8-8ad6-77c63bd1d469/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/590da003-e4bc-40a8-8ad6-77c63bd1d469/ 2048w"
+                          loading="lazy"></div>
+                    </a><a class="mobile-accordion-group-title"
+                      href="/collections/outletsale">Outlet</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/collections/outletsale">Last Chance Sale<span
+                          style="background-color: rgb(231, 78, 73);">SALE</span></a>
+                    </div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/collections/warehouse">Warehouse</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/collections/warehouse">Shop Gently Used Gear<span
+                          style="background-color: rgb(231, 78, 73);">SALE</span></a>
+                    </div>
+                  </div>
+                  <div class="mobile-accordion-group"><a
+                      class="mobile-accordion-group-title"
+                      href="/products/face-mask-50-pack">Medical</a>
+                    <div class="mobile-accordion-link-container"><a
+                        href="/products/face-mask-50-pack">3-Layer Masks</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="notification" style="display: none;">
+          <div class="notification-header">
+            <p>Notifications</p><button class="Btn icon-button notif-btn"
+              type="button"><svg width="28" height="31" viewBox="0 0 28 31" fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="Icon notification-close  Icon--black ">
+                <path d="M8.14355 12.5H15.1436" stroke="black" stroke-width="2"
+                  stroke-linecap="round"></path>
+                <path d="M8.14355 17.5H15.1436" stroke="black" stroke-width="2"
+                  stroke-linecap="round"></path>
+                <path d="M8.14355 22.5H15.1436" stroke="black" stroke-width="2"
+                  stroke-linecap="round"></path>
+                <rect x="1.89355" y="5.25" width="19.5" height="24.5" rx="3.75"
+                  stroke="black" stroke-width="2.5"></rect>
+              </svg></button>
+          </div>
+          <div class="notification-list-container">
+            <div class="notification-list">
+              <div class="notification-title">Older</div>
+              <div class="notification-container"><a class="notification-item"
+                  href="/products/super-slim-carbide-iphone-14-pro">
+                  <div class="notification-image-container"><img decoding="async"
+                      class="notification-image"
+                      src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/"
+                      srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/c654fec3-e179-418d-8318-98fd3b61a4bd/ 2048w"
+                      loading="lazy"></div>
+                  <div class="notification-content">
+                    <div class="product-name">Introducing Super Slim for iPhone 14</div>
+                    <div class="product-description">
+                      <p>Our thinnest case yet, Super Slim stylishly maintains the form
+                        factor of your iPhone.</p>
+                    </div>
+                    <div class="product-time">10 days ago</div>
+                  </div>
+                </a><a class="notification-item"
+                  href="/products/ac-adapter-30w-transparent-usb-c">
+                  <div class="notification-image-container"><img decoding="async"
+                      class="notification-image"
+                      src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/"
+                      srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/fe5a8130-5ba9-4041-9a50-b005457e95ab/ 2048w"
+                      loading="lazy"></div>
+                  <div class="notification-content">
+                    <div class="product-name">30W Adapter, Redesigned</div>
+                    <div class="product-description">
+                      <p>Introducing the limited edition Transparent colorway for 30W
+                        Adapter. Shop now.</p>
+                    </div>
+                    <div class="product-time">17 days ago</div>
+                  </div>
+                </a><a class="notification-item"
+                  href="/products/rugged-strap-v2-ultra-orange-silver-hardware">
+                  <div class="notification-image-container"><img decoding="async"
+                      class="notification-image"
+                      src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/"
+                      srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/62785c48-86d8-45cb-889d-7b31c3374f5d/ 2048w"
+                      loading="lazy"></div>
+                  <div class="notification-content">
+                    <div class="product-name">Rugged Band in Ultra Orange</div>
+                    <div class="product-description">
+                      <p>Designed for adventure. Shop Rugged Band now.</p>
+                    </div>
+                    <div class="product-time">22 days ago</div>
+                  </div>
+                </a><a class="notification-item"
+                  href="/collections/ultra-orange-collection">
+                  <div class="notification-image-container"><img decoding="async"
+                      class="notification-image"
+                      src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/"
+                      srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/eb2ee977-ede7-405c-bf84-d096e65ffbd8/ 2048w"
+                      loading="lazy"></div>
+                  <div class="notification-content">
+                    <div class="product-name">Introducing Ultra Orange</div>
+                    <div class="product-description">
+                      <p>Ultra Orange gear to complement your Apple devices. Show now.</p>
+                    </div>
+                    <div class="product-time">2 months ago</div>
+                  </div>
+                </a><a class="notification-item" href="/collections/iphone-14-cases">
+                  <div class="notification-image-container"><img decoding="async"
+                      class="notification-image"
+                      src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/"
+                      srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/bb1898d4-6a4b-450d-9d39-f43898321995/ 2048w"
+                      loading="lazy"></div>
+                  <div class="notification-content">
+                    <div class="product-name">Introducing Cases for iPhone 14 &amp; 14 Pro
+                    </div>
+                    <div class="product-description">
+                      <p>From the modern minimalist to the adventure seeker, we have a new
+                        case for everyone.</p>
+                    </div>
+                    <div class="product-time">2 months ago</div>
+                  </div>
+                </a><a class="notification-item" href="/products/base-one-max-gold">
+                  <div class="notification-image-container"><img decoding="async"
+                      class="notification-image"
+                      src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/"
+                      srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/1280466e-1127-4c23-986a-cbcfe52150a4/ 2048w"
+                      loading="lazy"></div>
+                  <div class="notification-content">
+                    <div class="product-name">Limited Edition Gold is Here</div>
+                    <div class="product-description">
+                      <p>Base One and Base One Max now in Limited Edition Gold.</p>
+                    </div>
+                    <div class="product-time">3 months ago</div>
+                  </div>
+                </a><a class="notification-item" href="/products/pen-titanium">
+                  <div class="notification-image-container"><img decoding="async"
+                      class="notification-image"
+                      src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/"
+                      srcset="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_180/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 180w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_360/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 360w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_720/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 720w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_900/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 900w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1080/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 1080w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1200/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 1200w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_1920/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 1920w,https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto,c_limit,w_2048/https://f.shgcdn.com/9140f47b-74b9-485b-aaf6-9f7f6da056f5/ 2048w"
+                      loading="lazy"></div>
+                  <div class="notification-content">
+                    <div class="product-name">Introducing Titanium Pen</div>
+                    <div class="product-description">
+                      <p>Machined from solid titanium, designed to write.</p>
+                    </div>
+                    <div class="product-time">3 months ago</div>
+                  </div>
+                </a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="mobile-socials">
+        <li class="SocialLinks-item appear-animation animate"
+          style="transition-delay: 0.12s;"><a href="https://www.instagram.com/nomad/"
+            title="Nomad on Instagram" class="SocialLinks-link" target="blank"><svg
+              aria-hidden="true" focusable="false" class="Icon SocialLinks-icon  "
+              viewBox="0 0 32 32">
+              <path fill="black"
+                d="M16 3.094c4.206 0 4.7.019 6.363.094 1.538.069 2.369.325 2.925.544.738.287 1.262.625 1.813 1.175s.894 1.075 1.175 1.813c.212.556.475 1.387.544 2.925.075 1.662.094 2.156.094 6.363s-.019 4.7-.094 6.363c-.069 1.538-.325 2.369-.544 2.925-.288.738-.625 1.262-1.175 1.813s-1.075.894-1.813 1.175c-.556.212-1.387.475-2.925.544-1.663.075-2.156.094-6.363.094s-4.7-.019-6.363-.094c-1.537-.069-2.369-.325-2.925-.544-.737-.288-1.263-.625-1.813-1.175s-.894-1.075-1.175-1.813c-.212-.556-.475-1.387-.544-2.925-.075-1.663-.094-2.156-.094-6.363s.019-4.7.094-6.363c.069-1.537.325-2.369.544-2.925.287-.737.625-1.263 1.175-1.813s1.075-.894 1.813-1.175c.556-.212 1.388-.475 2.925-.544 1.662-.081 2.156-.094 6.363-.094zm0-2.838c-4.275 0-4.813.019-6.494.094-1.675.075-2.819.344-3.819.731-1.037.4-1.913.944-2.788 1.819S1.486 4.656 1.08 5.688c-.387 1-.656 2.144-.731 3.825-.075 1.675-.094 2.213-.094 6.488s.019 4.813.094 6.494c.075 1.675.344 2.819.731 3.825.4 1.038.944 1.913 1.819 2.788s1.756 1.413 2.788 1.819c1 .387 2.144.656 3.825.731s2.213.094 6.494.094 4.813-.019 6.494-.094c1.675-.075 2.819-.344 3.825-.731 1.038-.4 1.913-.944 2.788-1.819s1.413-1.756 1.819-2.788c.387-1 .656-2.144.731-3.825s.094-2.212.094-6.494-.019-4.813-.094-6.494c-.075-1.675-.344-2.819-.731-3.825-.4-1.038-.944-1.913-1.819-2.788s-1.756-1.413-2.788-1.819c-1-.387-2.144-.656-3.825-.731C20.812.275 20.275.256 16 .256z">
+              </path>
+              <path fill="black"
+                d="M16 7.912a8.088 8.088 0 0 0 0 16.175c4.463 0 8.087-3.625 8.087-8.088s-3.625-8.088-8.088-8.088zm0 13.338a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 1 1 0 10.5zM26.294 7.594a1.887 1.887 0 1 1-3.774.002 1.887 1.887 0 0 1 3.774-.003z">
+              </path>
+            </svg></a></li>
+        <li class="SocialLinks-item appear-animation animate"
+          style="transition-delay: 0.18s;"><a href="https://www.facebook.com/nomad"
+            title="Nomad on Facebook" class="SocialLinks-link" target="blank"><svg
+              aria-hidden="true" focusable="false" class="Icon SocialLinks-icon  "
+              viewBox="0 0 32 32">
+              <path fill="black"
+                d="M18.56 31.36V17.28h4.48l.64-5.12h-5.12v-3.2c0-1.28.64-2.56 2.56-2.56h2.56V1.28H19.2c-3.84 0-7.04 2.56-7.04 7.04v3.84H7.68v5.12h4.48v14.08h6.4z">
+              </path>
+            </svg></a></li>
+        <li class="SocialLinks-item appear-animation animate"
+          style="transition-delay: 0.24s;"><a href="https://twitter.com/nomadgoods"
+            title="Nomad on Twitter" class="SocialLinks-link" target="blank"><svg
+              aria-hidden="true" focusable="false" class="Icon SocialLinks-icon  "
+              viewBox="0 0 32 32">
+              <path fill="black"
+                d="M31.281 6.733q-1.304 1.924-3.13 3.26 0 .13.033.408t.033.408q0 2.543-.75 5.086t-2.282 4.858-3.635 4.108-5.053 2.869-6.341 1.076q-5.282 0-9.65-2.836.913.065 1.5.065 4.401 0 7.857-2.673-2.054-.033-3.668-1.255t-2.266-3.146q.554.13 1.206.13.88 0 1.663-.261-2.184-.456-3.619-2.184t-1.435-3.977v-.065q1.239.652 2.836.717-1.271-.848-2.021-2.233t-.75-2.983q0-1.63.815-3.195 2.38 2.967 5.754 4.678t7.319 1.907q-.228-.815-.228-1.434 0-2.608 1.858-4.45t4.532-1.842q1.304 0 2.51.522t2.054 1.467q2.152-.424 4.01-1.532-.685 2.217-2.771 3.488 1.989-.261 3.619-.978z">
+              </path>
+            </svg></a></li>
+      </ul>
+    </div>
+  </section>
+</body>
+
+</html>
